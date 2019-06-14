@@ -3,21 +3,6 @@ module.exports = {
   theme: '@vuepress/blog',
 
   themeConfig: {
-    modifyBlogPluginOptions(blogPlugnOptions) {
-      const writingDirectoryClassifier = {
-        id: 'writing',
-        dirname: '_writings',
-        path: '/writings/',
-        layout: 'IndexWriting',
-        itemLayout: 'Writing',
-        itemPermalink: '/writings/:year/:month/:day/:slug',
-        pagination: {
-          perPagePosts: 5,
-        },
-      }
-      blogPlugnOptions.directories.push(writingDirectoryClassifier)
-      return blogPlugnOptions
-    },
     summaryLength: 100,
     // Please keep looking down to see the available options.
     nav: [
