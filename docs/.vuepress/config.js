@@ -3,6 +3,12 @@ module.exports = {
   theme: '@vuepress/blog',
 
   themeConfig: {
+    modifyBlogPluginOptions(blogPlugnOptions) {
+      const archiveDirectoryClassifierIndex = blogPlugnOptions.directories.findIndex(d => d.id === 'archive')
+      blogPlugnOptions.directories.splice(archiveDirectoryClassifierIndex, 1)
+
+      return blogPlugnOptions
+    },
     summaryLength: 100,
     // Please keep looking down to see the available options.
     nav: [
