@@ -1,5 +1,5 @@
 ---
-date: 2019-6-28
+date: 2019-06-28
 tags:
   - JavaScript
   - node
