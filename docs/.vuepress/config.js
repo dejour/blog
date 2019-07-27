@@ -1,6 +1,6 @@
 module.exports = {
   title: "Clay",
-  theme: '@vuepress/blog',
+  theme: '@vuepress/default',
 
   themeConfig: {
     modifyBlogPluginOptions(blogPlugnOptions) {
